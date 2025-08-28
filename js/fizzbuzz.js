@@ -15,5 +15,20 @@ proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro program
 
 //stampa dei numeri da 1 a 100
 for (let i=1; i<=100; i++){
-    console.log(i);
+    //OUTPUT fizzbuzz dai numeri divisibili per 3 e per 5
+    if (i % 3 === 0 && i % 5 === 0){
+        console.log("fizzbuzz");
+    } 
+    //OUTPUT buzz dai numeri divisibili per 5
+    else if (i % 5 === 0){
+        console.log("buzz");
+    } 
+    //OUTPUT fizz dai numeri divisibili per 3
+    else if (i % 3 === 0){
+        console.log("fizz");
+    } 
+    //OUTPUT dei numeri non divisibili per 3 e per 5
+    else {
+        console.log(i);
+    }
 }
